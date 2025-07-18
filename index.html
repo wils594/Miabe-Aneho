@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Aného360 - Accueil</title>
+  <title>Aného</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     .rotate-180 {
@@ -67,8 +67,10 @@
                 <ul id="primaire-submenu" class="absolute top-0 left-full ml-1 w-72 max-w-xs bg-white text-gray-900 rounded-lg shadow-lg opacity-0 invisible transition-opacity duration-200 border border-gray-200 z-50">
                   <li><a href="ecoles/sigbehoue.html" class="block px-2 py-1 hover:bg-blue-600 hover:text-white rounded-lg transition text-sm">École Primaire Publique Sigbehoué</a></li>
                   <li><a href="ecoles/virgo.html" class="block px-2 py-1 hover:bg-blue-600 hover:text-white rounded-lg transition text-sm">École Virgo-Regina</a></li>
+                 <li><a href="ecoles/zebe.html" class="block px-2 py-1 hover:bg-blue-600 hover:text-white rounded-lg transition text-sm">École primaire de Zébé</a></li>
                   <li><a href="ecoles/adjido.html" class="block px-2 py-1 hover:bg-blue-600 hover:text-white rounded-lg transition text-sm">École Primaire Catholique d'Adjido</a></li>
                 </ul>
+
               </li>
 
               <!-- École Secondaire -->
@@ -87,8 +89,8 @@
                 <!-- Sous-sous-menu École Secondaire -->
                 <ul id="secondaire-submenu" class="absolute top-0 left-full ml-1 w-72 max-w-xs bg-white text-gray-900 rounded-lg shadow-lg opacity-0 invisible transition-opacity duration-200 border border-gray-200 z-50">
                   <li><a href="ecoles/cspp.html" class="block px-2 py-1 hover:bg-blue-600 hover:text-white rounded-lg transition text-sm">Collège Saints Pierre et Paul (CSPP)</a></li>
-                  <li><a href="ecoles/zebe.html" class="block px-2 py-1 hover:bg-blue-600 hover:text-white rounded-lg transition text-sm">École primaire de Zébé</a></li>
-                  <li><a href="ecoles/zebevi.html" class="block px-2 py-1 hover:bg-blue-600 hover:text-white rounded-lg transition text-sm">Lycée de Zébévi Officiel</a></li>
+                  <li><a href="" class="block px-2 py-1 hover:bg-blue-600 hover:text-white rounded-lg transition text-sm"></a></li>
+                  <li><a href="ecoles/zébévi.html" class="block px-2 py-1 hover:bg-blue-600 hover:text-white rounded-lg transition text-sm">Lycée de Zébévi Officiel</a></li>
                 </ul>
               </li>
 
@@ -363,23 +365,26 @@
   <h2 class="text-3xl font-bold text-center text-blue-700 mb-8">Ce que disent nos visiteurs</h2>
   <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-    <blockquote class="bg-white p-6 rounded-xl shadow-lg italic text-gray-700 relative before:content-['“'] before:text-5xl before:absolute before:-top-6 before:left-6 before:text-blue-300">
+    <blockquote class="bg-white p-6 rounded-xl shadow-lg italic text-gray-700 relative before:content-[''] before:text-5xl before:absolute before:-top-6 before:left-6 before:text-blue-300">
+      <svg xmlns="http://www.w3.org/2000/svg" class="absolute -top-6 left-6 w-8 h-8 text-blue-300" fill="currentColor" viewBox="0 0 24 24"></svg>
+      <path d="M12 12a4 4 0 100-8 4 4 0 000 8zm0 2c-4.418 0-8 1.79-8 4v2a1 1 0 001 1h14a1 1 0 001-1v-2c0-2.21-3.582-4-8-4z"/>
+      </svg>
       <p>
-        "Un site complet qui m'a beaucoup aidé à trouver les meilleures écoles pour mes enfants. Bravo !"
+      Un site complet qui m'a beaucoup aidé à trouver les meilleures écoles pour mes enfants. Bravo !
       </p>
       <footer class="mt-4 text-sm text-gray-500 text-right">— Fatou D.</footer>
     </blockquote>
 
-    <blockquote class="bg-white p-6 rounded-xl shadow-lg italic text-gray-700 relative before:content-['“'] before:text-5xl before:absolute before:-top-6 before:left-6 before:text-red-300">
+    <blockquote class="bg-white p-6 rounded-xl shadow-lg italic text-gray-700 relative before:content-[''] before:text-5xl before:absolute before:-top-6 before:left-6 before:text-red-300">
       <p>
-        "J'adore la sélection des restaurants traditionnels, une vraie découverte culinaire !"
+        J'adore la sélection des restaurants traditionnels, une vraie découverte culinaire !
       </p>
       <footer class="mt-4 text-sm text-gray-500 text-right">— Kossi M.</footer>
     </blockquote>
 
-    <blockquote class="bg-white p-6 rounded-xl shadow-lg italic text-gray-700 relative before:content-['“'] before:text-5xl before:absolute before:-top-6 before:left-6 before:text-green-300">
+    <blockquote class="bg-white p-6 rounded-xl shadow-lg italic text-gray-700 relative before:content-[''] before:text-5xl before:absolute before:-top-6 before:left-6 before:text-green-300">
       <p>
-        "Les infos sur la culture locale m'ont donné envie de revenir pour le festival annuel."
+        Les infos sur la culture locale m'ont donné envie de revenir pour le festival annuel.
       </p>
       <footer class="mt-4 text-sm text-gray-500 text-right">— Awa T.</footer>
     </blockquote>
@@ -404,33 +409,38 @@
   <ul class="space-y-8">
 
     <li class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition flex flex-col md:flex-row items-center md:items-start gap-6">
-      <img src="https://source.unsplash.com/300x200/?music,festival" alt="Festival de musique" class="w-full md:w-1/3 rounded-lg object-cover h-48">
+      <img src="asset/fiha.jpg" alt="Festival de musique" class="w-full md:w-1/3 rounded-lg object-cover h-48">
       <div class="md:w-2/3">
-        <h3 class="text-xl font-semibold text-blue-600 mb-2">Festival de musique d'Aného 2025</h3>
+        <h3 class="text-xl font-semibold text-blue-600 mb-2">Festival Internationnal d'histoire d'Aného</h3>
         <p class="text-gray-700 mb-2">
-          Rejoignez-nous du 15 au 20 août pour une semaine de concerts et de festivités en plein cœur d'Aného.
+          Le FIHA est un festival pluridisciplinaire initié par la Fondation Aquereburu & Partners, en collaboration avec la commune des Lacs 1, dont Aného est le chef-lieu. La manifestation se déroule en plein cœur de la ville historique, autrefois capitale du Togo à deux reprises (1886‑1897 et 1914‑1919) et inscrite sur la liste indicative du patrimoine mondial de l’UNESCO depuis 2000
         </p>
-        <time datetime="2025-08-15" class="text-sm text-gray-500">15 août 2025</time>
+        <time datetime="2025-08-15" class="text-sm text-gray-500">17 juillet 2025</time>
       </div>
     </li>
 
     <li class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition flex flex-col md:flex-row items-center md:items-start gap-6">
-      <img src="https://source.unsplash.com/300x200/?market,christmas" alt="Marché artisanal" class="w-full md:w-1/3 rounded-lg object-cover h-48">
+      <img src="asset/logo.jpg" class="w-full md:w-1/3 rounded-lg object-cover h-48" controls poster="asset/bienvenue.jpeg">
+    
+      </video>
       <div class="md:w-2/3">
-        <h3 class="text-xl font-semibold text-blue-600 mb-2">Marché artisanal spécial Noël</h3>
+        <h3 class="text-xl font-semibold text-blue-600 mb-2">Lacs1/ Évolution dans Le secteur du bâtiment et des travaux publics (BTP)</h3>
         <p class="text-gray-700 mb-2">
-          Du 10 au 24 décembre, découvrez les créations locales pour préparer vos fêtes de fin d'année.
+          AVANCEMENTS DES TRAVAUX PUBLICS DANS LA COMMUNE  LACS1 TRAVAUX DE CONSTRUCTION DE QUATRE BLOCS DE LATRINES DE QUATRE CABINES A GAH CONDJI, ABATAME, ZOWLA KPOGUEDE ET AFANVI CONDJI ET DEUX...
         </p>
         <time datetime="2025-12-10" class="text-sm text-gray-500">10 décembre 2025</time>
       </div>
     </li>
 
     <li class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition flex flex-col md:flex-row items-center md:items-start gap-6">
-      <img src="https://source.unsplash.com/300x200/?bus,transport" alt="Nouvelle ligne de bus" class="w-full md:w-1/3 rounded-lg object-cover h-48">
+      <img src="asset/anpe.jpg" alt="Nouvelle ligne de bus" class="w-full md:w-1/3 rounded-lg object-cover h-48">
       <div class="md:w-2/3">
-        <h3 class="text-xl font-semibold text-blue-600 mb-2">Nouvelle ligne de bus urbain</h3>
+        <h3 class="text-xl font-semibold text-blue-600 mb-2">Agence Nationale pour l'Emploi dans les Lacs1</h3>
         <p class="text-gray-700 mb-2">
-          Une nouvelle ligne relie désormais les quartiers Nord à la gare routière pour faciliter vos déplacements.
+          Le 30 septembre 2024, l’ANPE‑TOGO a inauguré une antenne locale à Aného, située directement dans l’enceinte de la mairie de la commune des Lacs 1 
+. Ce service public vise à rapprocher les populations des services de l’emploi dans les zones de Vo, Lacs et Bas‑Mono.
+
+
         </p>
         <time datetime="2025-06-01" class="text-sm text-gray-500">1er juin 2025</time>
       </div>
@@ -489,7 +499,8 @@
       });
     });
   </script>
-
+   
+<!-- Footer -->
   <footer class="bg-gray-800 text-gray-200 py-8 mt-12">
   <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
     <!-- Logo et description -->

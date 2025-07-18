@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>École Virgo Regina - Aného</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    #searchResults {
+      max-height: 200px;
+      overflow-y: auto;
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-to-b from-blue-50 via-white to-blue-50 min-h-screen flex flex-col font-sans">
+
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-purple-700 via-purple-800 to-purple-900 text-white py-8 shadow-lg">
+    <div class="container mx-auto px-6 flex flex-col items-center space-y-6 md:space-y-0 md:flex-row md:justify-center md:space-x-12">
+      <h1 class="text-4xl font-extrabold text-center tracking-wide drop-shadow-md">École Virgo Regina – Aného</h1>
+
+      <!-- Barre de recherche -->
+      <div class="relative w-full max-w-md">
+        <input id="searchInput" type="text" placeholder="Rechercher..."
+          class="w-full rounded-xl py-3 px-5 text-gray-800 font-medium shadow-md focus:outline-none focus:ring-4 focus:ring-purple-300 transition"
+          oninput="filterSearchResults()" />
+        <ul id="searchResults"
+          class="absolute bg-white w-full mt-2 rounded-lg shadow-xl border border-gray-300 hidden z-20 text-gray-900 max-h-52 overflow-auto"></ul>
+      </div>
+    </div>
+  </header>
+  <!-- Retour à la page principale -->
+      <div class="text-center mt-8">
+        <a href="../index.html" class="inline-flex items-center gap-2 bg-gradient-to-r from-red-600 via-pink-600 to-yellow-500 text-white px-8 py-3 rounded-full shadow-lg font-bold text-lg hover:scale-105 hover:from-red-700 hover:to-yellow-600 transition-all duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
+          Retour à la page principale
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Contenu principal -->
+  <main class="flex-grow container mx-auto px-6 py-12 max-w-4xl">
+    <section id="filterableContent" class="space-y-12">
+
+      <div class="bg-white rounded-3xl shadow-md p-8" data-keywords="historique fondation aného">
+        <h2 class="text-2xl font-bold text-purple-800 mb-4">Historique</h2>
+        <p class="text-gray-700 leading-relaxed">L’École Virgo Regina est un établissement privé laïc situé à Aného. Elle s’est distinguée depuis plusieurs années par la qualité de son encadrement et son engagement dans le développement local.</p>
+      </div>
+
+      <div class="bg-white rounded-3xl shadow-md p-8" data-keywords="équipe enseignants personnel direction">
+        <h2 class="text-2xl font-bold text-purple-800 mb-4">Équipe pédagogique</h2>
+        <p class="text-gray-700 leading-relaxed">L’équipe de Virgo Regina est constituée d'enseignants dynamiques et expérimentés, avec une direction tournée vers l'excellence éducative.</p>
+      </div>
+
+      <div class="bg-white rounded-3xl shadow-md p-8" data-keywords="projets activités concours élèves">
+        <h2 class="text-2xl font-bold text-purple-800 mb-4">Projets éducatifs</h2>
+        <p class="text-gray-700 leading-relaxed">L'école organise régulièrement des concours d’orthographe, de dessin, et des clubs d’apprentissage pour stimuler la curiosité des élèves.</p>
+      </div>
+
+      <div class="bg-white rounded-3xl shadow-md p-8" data-keywords="événements fête distinction prix">
+        <h2 class="text-2xl font-bold text-purple-800 mb-4">Événements récents</h2>
+        <p class="text-gray-700 leading-relaxed">Le 28 juin 2008, un concours inter-écoles a été organisé à Klouvidonnou-Awouno Kondji, récompensant les élèves les plus méritants de Virgo Regina et d'autres établissements.</p>
+      </div>
+
+      <div class="bg-white rounded-3xl shadow-md p-8" data-keywords="contact téléphone inscription email">
+        <h2 class="text-2xl font-bold text-purple-800 mb-4">Contact et inscriptions</h2>
+        <p class="text-gray-700 leading-relaxed">Pour tout renseignement, appelez au +228 91 23 45 67 ou envoyez un email à <a href="mailto:contact@virgo-regina.tg" class="text-purple-700 underline hover:text-purple-900">contact@virgo-regina.tg</a>.</p>
+      </div>
+ 
+
+  
+   <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-200 py-8 mt-12">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+    <!-- Logo et description -->
+    <div>
+      <h2 class="text-xl font-bold mb-4 text-yellow-400">Miabé Aného</h2>
+      <p class="text-gray-400 text-sm">
+        Découvrez le meilleur d’Aného : lieux, restaurants, écoles, culture et bien plus encore.  
+        Votre guide local pour une expérience inoubliable.
+      </p>
+    </div>
+
+    <!-- Liens utiles -->
+    <div>
+      <h3 class="font-semibold mb-3">Liens utiles</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:text-yellow-400 transition">Accueil</a></li>
+        <li><a href="#" class="hover:text-yellow-400 transition">Restaurants</a></li>
+        <li><a href="#" class="hover:text-yellow-400 transition">Écoles</a></li>
+        <li><a href="#" class="hover:text-yellow-400 transition">Culture</a></li>
+        <li><a href="#" class="hover:text-yellow-400 transition">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div>
+      <h3 class="font-semibold mb-3">Contact</h3>
+      <ul class="space-y-2 text-sm">
+        <li>Email: <a href="mailto:contact@miabe-aneho.tg" class="hover:text-yellow-400 transition">contact@miabe-aneho.tg</a></li>
+        <li>Téléphone: <a href="tel:+22812345678" class="hover:text-yellow-400 transition">+228 12 34 56 78</a></li>
+        <li>Adresse: Quartier Centre, Aného, Togo</li>
+      </ul>
+    </div>
+
+    <!-- Réseaux sociaux -->
+    <div>
+      <h3 class="font-semibold mb-3">Suivez-nous</h3>
+      <div class="flex space-x-4 text-yellow-400 text-lg">
+        <a href="#" aria-label="Facebook" class="hover:text-yellow-300 transition">
+          <svg fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6"><path d="M22 12a10 10 0 10-11.6 9.8v-6.9h-3v-2.9h3v-2.2c0-3 1.8-4.7 4.5-4.7 1.3 0 2.6.2 2.6.2v2.9h-1.5c-1.5 0-2 1-2 2v2h3.4l-.5 2.9h-2.9v6.9A10 10 0 0022 12z"/></svg>
+        </a>
+        <a href="#" aria-label="Twitter" class="hover:text-yellow-300 transition">
+          <svg fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6"><path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.3 4.3 0 001.9-2.37 8.59 8.59 0 01-2.72 1.04 4.29 4.29 0 00-7.3 3.9 12.18 12.18 0 01-8.84-4.5 4.28 4.28 0 001.33 5.72 4.25 4.25 0 01-1.94-.54v.05a4.3 4.3 0 003.44 4.22 4.28 4.28 0 01-1.93.07 4.3 4.3 0 004 3 8.6 8.6 0 01-5.32 1.83A8.8 8.8 0 012 19.54a12.14 12.14 0 006.56 1.92c7.88 0 12.2-6.53 12.2-12.2 0-.19 0-.39-.01-.58A8.63 8.63 0 0022.46 6z"/></svg>
+        </a>
+        <a href="#" aria-label="Instagram" class="hover:text-yellow-300 transition">
+          <svg fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6"><path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 1.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7zm4.75-.88a1.12 1.12 0 110 2.25 1.12 1.12 0 010-2.25z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="border-t border-gray-700 mt-8 pt-4 text-center text-xs text-gray-500 select-none">
+    &copy; 2025 Miabé Aného. Tous droits réservés.
+  </div>
+</footer>
+  <!-- footer  -->
+
+  <script>
+    const searchInput = document.getElementById("searchInput");
+    const searchResults = document.getElementById("searchResults");
+
+    const data = [
+      "Historique",
+      "Équipe pédagogique",
+      "Projets éducatifs",
+      "Événements récents",
+      "Contact et inscriptions"
+    ];
+
+    function filterSearchResults() {
+      const query = searchInput.value.toLowerCase();
+      searchResults.innerHTML = "";
+
+      if (!query) {
+        searchResults.classList.add("hidden");
+      } else {
+        const filtered = data.filter(item =>
+          item.toLowerCase().includes(query)
+        );
+
+        if (filtered.length === 0) {
+          searchResults.innerHTML = `<li class="p-2 text-gray-500">Aucun résultat trouvé</li>`;
+        } else {
+          filtered.forEach(item => {
+            const li = document.createElement("li");
+            li.className = "p-2 hover:bg-purple-100 cursor-pointer";
+            li.textContent = item;
+            li.onclick = () => {
+              searchInput.value = item;
+              searchResults.classList.add("hidden");
+              applyContentFilter(item.toLowerCase());
+            };
+            searchResults.appendChild(li);
+          });
+        }
+
+        searchResults.classList.remove("hidden");
+      }
+
+      applyContentFilter(query);
+    }
+
+    function applyContentFilter(query) {
+      const sections = document.querySelectorAll("#filterableContent > div");
+
+      sections.forEach(section => {
+        const keywords = section.getAttribute("data-keywords").toLowerCase();
+        const visible = keywords.includes(query) || query.trim() === "";
+        section.style.display = visible ? "block" : "none";
+      });
+    }
+
+    document.addEventListener('click', function (e) {
+      if (!searchResults.contains(e.target) && e.target !== searchInput) {
+        searchResults.classList.add("hidden");
+      }
+    });
+  </script>
+</body>
+</html>
